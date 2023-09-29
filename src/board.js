@@ -1,10 +1,11 @@
-const x = 5;
-const y= 5;
+const boardSize = 10;
+const board = [];
 
-let board = new Array(x);
+for (let i = 0; i != boardSize; i++) {
+    board.push([]);
+    for (let j = 0; j != boardSize; j++) {
+        board[i].push(0);
+    }
+}
 
-for (var i = 0; i < x; i++)
-	 {
- 		 board[i] = new Array(y); // make each element an array
-	 }
 console.log(board);
