@@ -10,3 +10,12 @@ function buildBoard(boardSize) {
 
     return board;
 }
+
+function buildBoardElement(board) {
+    board.forEach(row => {
+        console.log(row);
+        row.forEach(cell => {
+            console.log(cell);
+        })
+    })
+}
