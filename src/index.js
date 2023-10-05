@@ -1,4 +1,5 @@
 board = buildBoard(10);
 console.log(board);
 
-buildBoardElement(board);
+const boardElement = buildBoardElement(board);
+root.append(boardElement);
