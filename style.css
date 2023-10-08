@@ -15,3 +15,8 @@ body {
 
     border: 2px solid black;
 }
+
+.piece {
+    display: block;
+    margin: auto;
+}
