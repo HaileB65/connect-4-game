@@ -18,6 +18,8 @@ function handleBoardClick(row, col) {
 
 function createCell(value, row, col){
     const cell = c("td", value, "cell");
+    
+
     if (value != 0){
         const img = c("img", null, "piece");
         if (value === 1) {
