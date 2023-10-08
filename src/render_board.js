@@ -14,11 +14,11 @@ function buildBoardElement(board){
 
 function handleBoardClick(row, col) {
     updateBoard(row, col);
+    refreshBoard();
 }
 
 function createCell(value, row, col){
-    const cell = c("td", value, "cell");
-    
+    const cell = c("td", null, "cell");
 
     if (value != 0){
         const img = c("img", null, "piece");
@@ -38,6 +38,7 @@ function createCell(value, row, col){
 }
 
 function refreshBoard() {
-    boardElement = buildBoardElement(board);
-    root.replaceChildren(boardElement);
+    const boardElement = buildBoardElement(board); 
+    root.innerHTML = "";
+    root.appendChild(boardElement);
 }
