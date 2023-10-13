@@ -13,8 +13,14 @@ function buildBoardElement(board){
 }
 
 function handleBoardClick(row, col) {
-    updateBoard(row, col);
+    const winner = updateBoard(row, col);
     refreshBoard();
+
+    if (winner === 1){
+        alert("player 1 wins");
+    } else if (winner === 2){
+        alert("player 2 wins");
+    }
 }
 
 function createCell(value, row, col){
